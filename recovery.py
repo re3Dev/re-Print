@@ -47,7 +47,7 @@ async def monitor_virtual_sdcard(uri, moonraker_http_url):
         print("Failed to fetch printer details.")
         return
 
-    progress_file = "progress"
+    progress_file = "progress.txt"
     # Read last file_position from progress file if it exists and is not 0
     resume_position = None
     if os.path.exists(progress_file):
